@@ -11,7 +11,7 @@ if (isset($_POST['mdp']) AND !empty($_POST['mdp']) AND isset($_POST['admin_name'
 
   if($mdp['password'] == $_POST['mdp']){
     $_SESSION['connect'] = true;
-    header('Location:new_product.php');
+    header('Location:add_products.php');
   }
 }
 

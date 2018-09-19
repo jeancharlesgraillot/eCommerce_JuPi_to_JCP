@@ -5,4 +5,3 @@ try {
 } catch (PDOException $err) {
     die('Erreur mysql: '. $err->getMessage());
 }
-
