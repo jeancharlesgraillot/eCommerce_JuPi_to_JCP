@@ -16,9 +16,9 @@ if(isset($_POST['hidden']))
   <link rel="icon" href="icon.ico" />
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="/eCommerce/css/main.css">
-  <link rel="stylesheet" href="/eCommerce/css/main.css">
-  
+  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/css/main.css">
+  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/css/main.css">
+
 </head>
 
 <body>
@@ -29,10 +29,10 @@ if(isset($_POST['hidden']))
       <a href="index.php">FLICKT</a>
       <nav>
           <ul>
-              <li><a href="/eCommerce/">Accueil</a></li>
-              <li><a href="/eCommerce/form.php">Contact</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/">Accueil</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/form.php">Contact</a></li>
               <li>Panier<?php if(isset($_SESSION['panier'])) echo $_SESSION['panier'] ?></li>
-              <li><a href="/eCommerce/admin/adminaccess.php">Connexion</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/admin/adminaccess.php">Connexion</a></li>
           </ul>
       </nav>
   </header>
