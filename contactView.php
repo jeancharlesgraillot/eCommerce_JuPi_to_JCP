@@ -1,7 +1,3 @@
-<?php
-session_start();
-include 'include/header.php';
-?>
 <h1>Besoin d'informations? Contactez-nous!</h1>
 
 <form method="post" action="infosform.php">
@@ -16,5 +12,3 @@ include 'include/header.php';
 
 
 </form>
-<?php
-include 'include/footer.html';

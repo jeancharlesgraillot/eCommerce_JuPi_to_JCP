@@ -15,7 +15,3 @@ if (isset($_POST['mail']) AND !empty($_POST['mail'])){
 if (isset($_POST['message']) AND !empty($_POST['message'])){
   echo 'Message: ' . $_POST['message'] . "</br>";
 }
-
-
-
- ?>
