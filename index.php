@@ -12,7 +12,7 @@ if (isset($_GET['action'])) {
 
     else if ($_GET['action'] == 'descriptionProduct') {
       if (isset($_GET['id']) && $_GET['id'] > 0) {
-          descriptionProduct();
+          descriptionProduct($_GET['id']);
       }
     }
 
@@ -29,50 +29,4 @@ else {
     listProducts();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// session_start();
-//
-// require 'model/model.php';
-//
-// $title = "FLickt: accueil";
-//
-// include 'include/header.php';
-//
-// $products = getProducts();
-//
-// require('indexView.php');
-//
-//
-// include 'include/footer.html';
+// session_destroy();

@@ -29,10 +29,10 @@ if(isset($_POST['hidden']))
       <a href="index.php">FLICKT</a>
       <nav>
           <ul>
-              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/">Accueil</a></li>
-              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/form.php">Contact</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/index.php?action=listProducts">Accueil</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/index.php?action=contact">Contact</a></li>
               <li>Panier<?php if(isset($_SESSION['panier'])) echo $_SESSION['panier'] ?></li>
-              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/adminaccess.php">Connexion</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/index.php?action=adminPage">Connexion</a></li>
           </ul>
       </nav>
   </header>

@@ -1,9 +1,3 @@
-<?php
-session_start();
-
-include 'include/header.php';
-?>
-
 <form method="post" action="new_product.php" enctype="multipart/form-data">
     <label>Nom du produit </label> : <input type="text" name="name" required/></br>
     <textarea name="desc" placeholder="description" rows="8" cols="45" required>
@@ -14,6 +8,3 @@ include 'include/header.php';
     <label>Image (1 MO max.)</label> : <input type="file" name="img" required></br>
     <input type="submit" value="Valider" /></br>
 </form>
-
-<?php
-include 'include/footer.html';

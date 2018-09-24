@@ -1,9 +1,9 @@
 <?php
 session_start();
-require 'model/model.php';
+require 'model.php';
 
 if(!isset($_SESSION['connect']) || $_SESSION['connect'] != true)
-    header('Location: adminaccess.php');
+    header('Location: index.php?action=adminaccess.php');
 
 $title = 'ajouter un produit';
 
@@ -14,6 +14,8 @@ if (isset($_POST['name']) AND !empty($_POST['name'])
   AND isset($_POST['color']) AND !empty($_POST['color'])
   AND isset($_FILES['img']) AND ($_FILES['img']['error'] == 0)
   AND ($_FILES['img']['size'] < 1000000)) {
+
+
     $name = htmlspecialchars($_POST['name']);
     $descr = htmlspecialchars($_POST['desc']);
     $price = htmlspecialchars($_POST['price']);
@@ -28,20 +30,26 @@ if (isset($_POST['name']) AND !empty($_POST['name'])
 
             addProduct($name, $descr, $price, $size, $color, $img);
             move_uploaded_file($_FILES['img']['tmp_name'], 'img/'.$img);
-        }   else {
+        }
+
+        else {
             $err = 'veuillez entrer des chiffres dans les champs "prix" et "taille" ';
         }
-    }   else {
+    }
+
+    else {
         $err = 'le fichier doit être au format jpg ou png';
     }
 }
 
 include 'include/header.php';
 
-if(!isset($err)): ?>
-    <p>Votre produit a été enregistré.</p>
-<?php else: ?>
-    <a href="add_products.php"> Retour à la page précédente</a>
-<?php endif;
+if(!isset($err)){
+    echo "Votre produit a été enregistré.";
+  }
+
+else{
+    echo "Erreur; <a href='index.php?action=adminPage'> Retour à la page précédente</a>";
+}
 
 include 'include/footer.html';

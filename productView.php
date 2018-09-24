@@ -6,7 +6,7 @@
         <p>Info: <?= $product['descr'] ?> </p>
         <p>Tailles: <?= $product['size'] ?></p>
         <p>Couleurs: <?= $product['color'] ?></p>
-        <a href="?&id=<?= $_GET['id'] ?>&add=true">Ajouter au panier</a>
+        <a href="?&id=<?= $_GET['id'] ?>&add=true&action=descriptionProduct">Ajouter au panier</a>
     </div>
     <p><a href="index.php">Retour</a></p>
 </div>
