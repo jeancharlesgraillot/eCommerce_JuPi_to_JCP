@@ -32,7 +32,7 @@ if(isset($_POST['hidden']))
               <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/">Accueil</a></li>
               <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/form.php">Contact</a></li>
               <li>Panier<?php if(isset($_SESSION['panier'])) echo $_SESSION['panier'] ?></li>
-              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/admin/adminaccess.php">Connexion</a></li>
+              <li><a href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/adminaccess.php">Connexion</a></li>
           </ul>
       </nav>
   </header>

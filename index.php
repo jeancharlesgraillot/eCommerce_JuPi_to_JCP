@@ -1,26 +1,78 @@
+
 <?php
 session_start();
-require 'db.php';
 
-$title = "FLickt: accueil";
+require 'controller.php';
 
-$req = $pdo->query('SELECT * FROM products');
-$products = $req->fetchAll();
+if (isset($_GET['action'])) {
 
-include 'include/header.php';
-?>
+    if ($_GET['action'] == 'listProducts') {
+          listProducts();
+    }
 
-<div class="container">
-    <?php foreach($products as $product): ?>
-    <div class="product" data-id="<?= $product['id'] ?>">
-        <img src='img/<?= $product['img'] ?>' />
-        <ul class="info">
-            <li><?= $product['name'] ?></li>
-            <li><?= $product['price'] ?></li>
-        </ul>
-    </div>
-    <?php endforeach; ?>
-</div>
+    else if ($_GET['action'] == 'descriptionProduct') {
+      if (isset($_GET['id']) && $_GET['id'] > 0) {
+          descriptionProduct();
+      }
+    }
 
-<?php
-include 'include/footer.html';
+    else if ($_GET['action'] == 'contact') {
+          contact();
+    }
+
+    else if ($_GET['action'] == 'adminPage'){
+          adminPage();
+    }
+}
+
+else {
+    listProducts();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// session_start();
+//
+// require 'model/model.php';
+//
+// $title = "FLickt: accueil";
+//
+// include 'include/header.php';
+//
+// $products = getProducts();
+//
+// require('indexView.php');
+//
+//
+// include 'include/footer.html';
