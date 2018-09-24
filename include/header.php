@@ -18,7 +18,7 @@ if(isset($_POST['hidden']))
 
   <link rel="stylesheet" href="/eCommerce/css/main.css">
   <link rel="stylesheet" href="/eCommerce/css/main.css">
-  
+
 </head>
 
 <body>
@@ -29,10 +29,10 @@ if(isset($_POST['hidden']))
       <a href="index.php">FLICKT</a>
       <nav>
           <ul>
-              <li><a href="/eCommerce/">Accueil</a></li>
-              <li><a href="/eCommerce/form.php">Contact</a></li>
+              <li><a href="/eCommerce/index.php?action=listProducts">Accueil</a></li>
+              <li><a href="/eCommerce/index.php?action=contact">Contact</a></li>
               <li>Panier<?php if(isset($_SESSION['panier'])) echo $_SESSION['panier'] ?></li>
-              <li><a href="/eCommerce/admin/adminaccess.php">Connexion</a></li>
+              <li><a href="/eCommerce/index.php?action=adminPage">Connexion</a></li>
           </ul>
       </nav>
   </header>

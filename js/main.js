@@ -1,6 +1,6 @@
 $('.product').click(function() {
    var index = $(this).attr('data-id');
-   window.location.href = "product.php?id="+index;
+   window.location.href = "index.php?id="+index+"&action=descriptionProduct";
 });
 $('.mobile-menu').click(function() {
    $(this).toggle();
