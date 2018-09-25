@@ -3,7 +3,7 @@
 function pdoConnect() {
 
   try {
-      $pdo = new PDO('mysql:host=localhost;dbname=bdd_pierre_julie', 'root', 'Strawberry591peaches');
+      $pdo = new PDO('mysql:host=localhost;dbname=bdd_pierre_julie', 'root', '');
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   }
 

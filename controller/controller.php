@@ -1,14 +1,13 @@
-
 <?php
 
-require 'model.php';
+require 'model/model.php';
 
 function listProducts(){
 
   $title = "FLickt - Accueil";
   include 'include/header.php';
   $products = getProducts();
-  require('indexView.php');
+  require('view/indexView.php');
   include 'include/footer.html';
 
 }
@@ -38,7 +37,7 @@ function descriptionProduct($getid){
 
       $title = $product['name'];
       include 'include/header.php';
-      require 'productView.php';
+      require 'view/productView.php';
       include 'include/footer.html';
     }
   }
@@ -48,7 +47,7 @@ function contact(){
 
   $title = "Flickt - Contact";
   include 'include/header.php';
-  require ('contactView.php');
+  require ('view/contactView.php');
   include 'include/footer.html';
 }
 
@@ -67,10 +66,10 @@ function adminPage(){
   include 'include/header.php';
 
   if(isset($_SESSION['connect']) && $_SESSION['connect'] === true){
-    require 'add_products.php';
+    require 'view/add_products.php';
   }
   else{
-    require 'connectionView.php';
+    require 'view/connectionView.php';
   }
 
   include 'include/footer.html';

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'model.php';
+require '../model/model.php';
 
 if(!isset($_SESSION['connect']) || $_SESSION['connect'] != true)
     header('Location: index.php?action=adminaccess.php');
@@ -29,7 +29,7 @@ if (isset($_POST['name']) AND !empty($_POST['name'])
         if (is_numeric($price) AND is_numeric($size)) {
 
             addProduct($name, $descr, $price, $size, $color, $img);
-            move_uploaded_file($_FILES['img']['tmp_name'], 'img/'.$img);
+            move_uploaded_file($_FILES['img']['tmp_name'], '../public/img/'.$img);
         }
 
         else {
@@ -42,7 +42,7 @@ if (isset($_POST['name']) AND !empty($_POST['name'])
     }
 }
 
-include 'include/header.php';
+include '../include/header.php';
 
 if(!isset($err)){
     echo "Votre produit a été enregistré.";
@@ -52,4 +52,4 @@ else{
     echo "Erreur; <a href='index.php?action=adminPage'> Retour à la page précédente</a>";
 }
 
-include 'include/footer.html';
+include '../include/footer.html';

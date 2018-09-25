@@ -1,6 +1,6 @@
 <h1>Besoin d'informations? Contactez-nous!</h1>
 
-<form method="post" action="infosform.php">
+<form method="post" action="view/infosform.php">
 
 
   <label>Prénom</label> : <input type="text" name="prenom"/></br>

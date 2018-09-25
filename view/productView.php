@@ -1,7 +1,7 @@
 <div class="container">
     <div class="product">
         <h1><?= $product['name'] ?></h1>
-        <img class="img" src="img/<?= $product['img'] ?>" />
+        <img class="img" src="public/img/<?= $product['img'] ?>" />
         <p>Prix: <?= $product['price'] ?> €</p>
         <p>Info: <?= $product['descr'] ?> </p>
         <p>Tailles: <?= $product['size'] ?></p>

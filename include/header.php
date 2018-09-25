@@ -12,12 +12,12 @@ if(isset($_POST['hidden']))
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.ico" />
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="icon" href="../icon.ico" />
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/css/main.css">
-  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/css/main.css">
+  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/public/css/main.css">
+  <link rel="stylesheet" href="/php/boulot_semaine_14/site_eCommerce_Pierre_Julie/public/css/main.css">
 
 </head>
 
